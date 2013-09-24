@@ -2,7 +2,7 @@ noinst_LTLIBRARIES=libcutils.la
 
 libcutils_la_CFLAGS = -DHAVE_SYS_UIO_H -DHAVE_PTHREADS -DHAVE_SCHED_H -DHAVE_SYS_UIO_H -DHAVE_IOCTL -DHAVE_TM_GMTOFF -DANDROID_SMP=1 
 
-libcutils_la_CFLAGS += -I$(top_srcdir)/libcutils/include 
+libcutils_la_CFLAGS += -I$(top_srcdir)/libcutils/include  -I$(top_srcdir)/libcutils
 
 libcutils_la_SOURCES= \
 	partition_utils.c \
@@ -42,7 +42,9 @@ libcutils_la_SOURCES= \
 	iosched_policy.c \
 	tztime.c \
 	zygote.c \
-	abort_socket.c
+	abort_socket.c \
+	tzstrftime.c \
+	tztime.c
 
 noinst_HEADERS =	\
 	buffer.h  \
