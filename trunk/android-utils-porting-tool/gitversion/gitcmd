@@ -1,0 +1,7 @@
+#git clone https://android.googlesource.com/platform/frameworks/base
+
+git clone https://github.com/iBotPeaches/platform_frameworks_base
+
+git clone https://android.googlesource.com/platform/frameworks/native
+git clone https://android.googlesource.com/platform/system/core
+git clone https://android.googlesource.com/platform/build
