@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.68])
-AC_INIT(android-utils, 4.1.2, [cjacker@gmail.com])
+AC_INIT(android-utils, 4.4, [cjacker@gmail.com])
 
 AM_INIT_AUTOMAKE([1.10 no-define no-dist-gzip dist-bzip2 tar-ustar])
 AC_CONFIG_MACRO_DIR([m4])
