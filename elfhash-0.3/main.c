@@ -193,8 +193,8 @@ int main(int argc, char**argv)
   else
     exit(1);
  
-  //if there is .gnu.hash exist, always convert it.
-  if(has_gnuhash(base)) {
+  //if there is .gnu.hash exist, convert it except you use -l option
+  if(has_gnuhash(base) && !globalArgs.list) {
     /* Calculate gap */
     unsigned long gap = elfhash_compute_gap(base);
 
